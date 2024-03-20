@@ -3,13 +3,13 @@ import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 
     const firebaseConfig = {
-        apiKey: "AIzaSyD2eOBpIdF7lXp4sTnuJ-DPITdugXEBi0k",
-        authDomain: "designnftsss.firebaseapp.com",
-        projectId: "designnftsss",
-        storageBucket: "designnftsss.appspot.com",
-        messagingSenderId: "752356665318",
-        appId: "1:752356665318:web:f530b034f01a5377051827",
-        measurementId: "G-ZZNDVE0EGP"
+        apiKey: "AIzaSyBnQsWV528UIKN_OLdFbKBOKOlNzj8hseM",
+        authDomain: "designnfts-5d554.firebaseapp.com",
+        projectId: "designnfts-5d554",
+        storageBucket: "designnfts-5d554.appspot.com",
+        messagingSenderId: "1006535253653",
+        appId: "1:1006535253653:web:c9612f59dacffb6be4c59c",
+        measurementId: "G-DPKPBW8PFK"
       };  
 
 

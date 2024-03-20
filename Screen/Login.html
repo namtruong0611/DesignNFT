@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DesignNFT - Login</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    width: 400px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slide 0.5s ease forwards;
+  }
+
+  @keyframes slide {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .options {
+    text-align: center;
+  }
+
+  .options a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 20px;
+  }
+
+  .options a:hover {
+    color: #4CAF50;
+  }
+
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>DesignNFT - Login</h2>
+  <form id="loginForm" action="#">
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" placeholder="Your username..">
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="Your password..">
+
+    <input type="submit" value="Login" onclick="HomeScreen(event)">
+  </form>
+  <div class="options">
+    <a href="#" onclick="showRegisterForm()">Register</a>
+    <a href="#" onclick="showForgotPasswordForm()">Forgot Password?</a>
+  </div>
+  <form id="registerForm" action="#" style="display: none;">
+    <h2>DesignNFT - Register</h2>
+    <label for="newUsername">Username</label>
+    <input type="text" id="newUsername" name="newUsername" placeholder="Choose a username..">
+
+    <label for="newPassword">Password</label>
+    <input type="password" id="newPassword" name="newPassword" placeholder="Choose a password..">
+
+    <input type="submit" value="Register">
+  </form>
+  <form id="forgotPasswordForm" action="#" style="display: none;">
+    <h2>DesignNFT - Forgot Password</h2>
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email..">
+    <input type="submit" value="Reset Password">
+  </form>
+</div>
+
+<script>
+  function showRegisterForm() {
+    document.getElementById("loginForm").style.display = "none";
+    document.getElementById("registerForm").style.display = "block";
+    document.getElementById("forgotPasswordForm").style.display = "none";
+  }
+
+  function showForgotPasswordForm() {
+    document.getElementById("loginForm").style.display = "none";
+    document.getElementById("registerForm").style.display = "none";
+    document.getElementById("forgotPasswordForm").style.display = "block";
+  }
+
+  function HomeScreen(event) {
+    // Ngăn chặn hành động mặc định của form
+    event.preventDefault();
+
+    // Thực hiện kiểm tra thông tin đăng nhập ở đây
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    // Giả sử thông tin đăng nhập hợp lệ
+    if (username === "admin" && password === "admin") {
+        // Chuyển hướng đến trang homeScreen.html
+        window.location.href = "HomeScreen.html";
+    } else {
+        alert("Invalid username or password!");
+    }
+}
+
+</script>
+</body>
+</html>
