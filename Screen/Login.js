@@ -10,6 +10,11 @@
     document.getElementById("registerForm").style.display = "none";
     document.getElementById("forgotPasswordForm").style.display = "block";
   }
+  function showLoginForm() {
+    document.getElementById("loginForm").style.display = "block";
+    document.getElementById("registerForm").style.display = "none";
+    document.getElementById("forgotPasswordForm").style.display = "none";
+  }
 
   function HomeScreen(event) {
     // Ngăn chặn hành động mặc định của form
@@ -28,7 +33,8 @@
     }
 }
 function Login(event){
-    window.location.href = "HomeScreen.html";
+  event.preventDefault();
+    window.location.href = "Login.html";
 }
 
 
