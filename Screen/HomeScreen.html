@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook Clone</title>
- 
+    <link rel="stylesheet" href="HomeScreen.css">
 </head>
-
 <body>
     <div id="header">
-         <ul>
-            <li><a href="#">home </a></li>
-            <li><a href="#">Love</a></li>
-            <li><a href="#">Profile</a></li>
-         </ul>
+        <nav class="navbar">
+            <div class="container">
+               
+                <div class="search">
+                    <input type="text" placeholder="Search Facebook">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Lovepost</a></li>
+                        <li><a href="#">Profile</a></li>
+                     
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </div>
     <div id="content">
-        
         <div class="post">
             <div class="author">Jane Smith</div>
             <div class="timestamp">2 hours ago</div>
@@ -27,101 +34,12 @@
                     <img class="IMAGES" id="images">
                 </div>
             <div class="actions">
-                <a href="#" class="like">Like</a>
-                <a href="#">Comment</a>
-                <a href="#">Share</a>
-            </div>
-        </div>
-        <div class="post">
-            <div class="author">Jane Smith</div>
-            <div class="timestamp">2 hours ago</div>
-            <div class="content">Sed consequat, quam et accumsan venenatis, neque nunc consectetur risus, vel suscipit
-                justo ex at nulla.</div>
-                <div>
-                    <img class="IMAGES" id="images">
-                </div>
-            <div class="actions">
-                <a href="#" class="like">Like</a>
-                <a href="#">Comment</a>
-                <a href="#">Share</a>
+                <div class="box-like" onclick="colorLike(this)"><a href="#" class="like">Like</a></div>
+                <div class="box-comment"><a href="#" class="Comment">Comment</a></div>
             </div>
         </div>
     </div>
 </body>
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-        background-color: #f0f2f5;
-       
-    }
+<script src="HomeSceen.js"></script>
 
-    #header {
-        background-color: #3b5998;
-        color: white;
-        padding: 10px;
-        text-align: center;
-    }
-
-    #content {
-        margin: 20px;
-        background-color: white;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        height: 100%;
-        width: 60%;
-        justify-content:center;
-   
-    }
-
-    .post {
-        border-bottom: 1px solid #ddd;
-        padding: 20px 0;
-        width: 100%;
-       justify-content: center;
-        
-       
-    }
-
-    .post .author {
-        font-weight: bold;
-        color: #3b5998;
-    }
-
-    .post .timestamp {
-        color: #888;
-        font-size: 12px;
-    }
-
-    .post .content {
-        margin-top: 10px;
-    }
-
-    .post .actions {
-        margin-top: 10px;
-    }
-
-    .post .actions a {
-        text-decoration: none;
-        color: #3b5998;
-        margin-right: 10px;
-    }
-
-    .post .actions a:hover {
-        text-decoration: underline;
-    }
-
-    .post .actions .like:hover {
-        color: #ed3b3b;
-    }
-    .IMAGES {
-width: 50%;
-height: 300px;
-justify-content: center;
-align-items: center;
-    }
-    
-</style>
 </html>

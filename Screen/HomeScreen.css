@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    display: flex;  
+    flex-direction: column;  
+    justify-content: center;  
+    align-items: center; 
+   
+}
+
+#header {
+    background-color: #3b5998;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    float: left;
+ 
+}
+.navbar {
+    background-color: #3b5998;
+    padding: 10px 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .search input {
+    width: 300px;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 20px;
+  }
+  
+  .menu ul li a:hover {
+    background-color: #29487d;
+  }
+#content {
+    border-radius: 8px;
+    height: 80%;
+    width: 50%;
+    justify-content: center;  
+    align-items: center; 
+
+}
+
+.post {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 20px 20px 20px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+   
+}
+
+.post .author {
+    font-weight: bold;
+    color: #3b5998;
+}
+
+.post .timestamp {
+    color: #888;
+    font-size: 12px;
+}
+
+.post .content {
+    margin-top: 10px;
+}
+
+.post .actions {
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 0.1px solid gray;
+    border-top: 0.1px solid gray;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    text-align: center;
+    flex-direction: row;
+    display: flex;
+     
+}
+.post .actions .box-like{
+flex: 1;
+float: left;
+text-align: center;
+margin-right: 10px;
+padding-right: 10px;
+border-right: 1px solid gray;
+
+}
+.post .actions .box-comment{
+    flex: 1;
+    float: right;
+    text-align: center;
+    
+   
+    }
+.post .actions .box-comment a{
+   text-decoration: none;
+    
+   
+}
+.post .actions .box-like a {
+    text-decoration: none;
+    color: #3b5998;
+    margin-right: 10px;
+}
+
+
+.post .actions .box-like a:hover {
+    text-decoration: underline;
+}
+
+.post .actions .box-like .like:hover {
+    color: #ed3b3b;
+}
+.liked {
+    background-color: #ed3b3b;
+    color: white;
+}
+.IMAGES {
+width: 100%;
+height: 300px;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+}
